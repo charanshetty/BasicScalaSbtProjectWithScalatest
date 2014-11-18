@@ -1,0 +1,16 @@
+language: scala
+ scala:
+   - "2.10.4"
+
+ jdk:
+   - openjdk7
+
+
+script:
+- sbt scoverage:test
+- sbt coveralls
+
+after_success:
+- >
+test "${TRAVIS_PULL_REQUEST}" = 'false' &&
+test "${TRAVIS_JDK_VERSION}" = 'openjdk7'
