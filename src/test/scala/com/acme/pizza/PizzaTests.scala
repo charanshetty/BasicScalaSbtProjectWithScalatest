@@ -1,7 +1,6 @@
 package com.acme.pizza
 
 import com.acme.pizza.Pizza
-import com.acme.pizza.Topping
 import org.scalatest.FunSuite
 
 /**
@@ -34,10 +33,10 @@ class PizzaTests extends FunSuite with BeforeAndAfter {
 
   test("new pizza has zero toppings (version 2)") {
     // intentional error here; size should be 0
-    assert(pizza.getToppings.size === 1)
+    assert(pizza.getToppings.size === 0)
   }
   test("new pizza has zero toppings (version 3)") {
-    expectResult(1) {
+    expectResult(0) {
       pizza.getToppings.size
     }
   }

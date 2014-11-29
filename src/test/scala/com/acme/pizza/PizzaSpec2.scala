@@ -4,7 +4,8 @@
  * Created by hduser on 17/11/14.
  */
 
-import com.acme.pizza.com.acme.pizza.{Topping, Pizza}
+import com.acme.pizza.Topping
+import com.acme.pizza.com.acme.pizza.Pizza
 import org.scalatest.FunSpec
 import org.scalatest.BeforeAndAfter
 import org.scalatest.GivenWhenThen
